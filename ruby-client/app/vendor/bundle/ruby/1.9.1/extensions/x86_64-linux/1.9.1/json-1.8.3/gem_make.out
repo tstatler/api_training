@@ -1,0 +1,10 @@
+/opt/apcera/ruby-1.9.3-p547/bin/ruby -r ./siteconf20160512-11-1gwrkbl.rb extconf.rb 
+creating Makefile
+
+make  clean
+
+make
+make: Nothing to be done for `all'.
+
+make  install
+installing default libraries

@@ -1,0 +1,282 @@
+I0511 13:28:53.204973 80415 apc.go:180 ctx="apc"] apc invoked from directory /Users/timstatler/dev/stager_labs/jekyll-test
+I0511 13:28:53.205982 80415 apc.go:332 ctx="apc"] invoking command: package replace 
+I0511 13:28:54.566885 80415 request.go:160 ctx="apc" trace="1"] -- Sending HTTP Request:
+I0511 13:28:54.566912 80415 client_auth.go:357 ctx="apc" trace="1"] GET /v1/packages?fqn=package%3A%3A%2Fsandbox%2Ftim.statler%3A%3Ajekyll-stager HTTP/1.1
+I0511 13:28:54.566933 80415 client_auth.go:357 ctx="apc" trace="1"] Host: api.kiso.io
+I0511 13:28:54.566936 80415 client_auth.go:357 ctx="apc" trace="1"] User-Agent: APC/v2.0.1 (Continuum Client)
+I0511 13:28:54.566946 80415 client_auth.go:357 ctx="apc" trace="1"] Authorization: Bearer eyJ0eXAiOiIiLCJhbGciOiIifQ.eyJpc3MiOiJhdXRoX3NlcnZlckBhcGNlcmEubWUiLCJhdWQiOiJhcGNlcmEubWUiLCJpYXQiOjE0NjI5OTA5MTUsImV4cCI6MTQ2MzA3NzMyNSwicHJuIjoidGltLnN0YXRsZXJAYXBjZXJhLmNvbSIsImNsYWltcyI6W3siSXNzdWVyIjoiYXV0aF9zZXJ2ZXJAYXBjZXJhLm1lIiwiVHlwZSI6ImF1dGhUeXBlIiwiVmFsdWUiOiJnb29nbGVVc2VySW5mbyJ9XX0.MEYCIQCPKOUqjtYkQguPeh_xylfMYlDBIPQRutPlxh_x9uaPFgIhAJTF_G5XQ8EiqETO4uSVChjFYmlraAlfDQdQpGeAfHL9
+I0511 13:28:54.566952 80415 client_auth.go:357 ctx="apc" trace="1"] Hostname: Tims-MacBook-Pro.local-Client-Hostname
+I0511 13:28:54.566955 80415 client_auth.go:357 ctx="apc" trace="1"] Accept-Encoding: gzip
+I0511 13:28:54.566958 80415 client_auth.go:357 ctx="apc" trace="1"] 
+I0511 13:28:54.566961 80415 client_auth.go:357 ctx="apc" trace="1"] 
+I0511 13:28:55.181865 80415 request.go:184 ctx="apc" trace="2"] -- Received HTTP Response:
+I0511 13:28:55.181883 80415 client_auth.go:357 ctx="apc" trace="2"] HTTP/1.1 200 OK
+I0511 13:28:55.181889 80415 client_auth.go:357 ctx="apc" trace="2"] Transfer-Encoding: chunked
+I0511 13:28:55.181892 80415 client_auth.go:357 ctx="apc" trace="2"] Connection: keep-alive
+I0511 13:28:55.181894 80415 client_auth.go:357 ctx="apc" trace="2"] Content-Type: application/json
+I0511 13:28:55.181897 80415 client_auth.go:357 ctx="apc" trace="2"] Date: Wed, 11 May 2016 20:28:55 GMT
+I0511 13:28:55.181899 80415 client_auth.go:357 ctx="apc" trace="2"] Minimum-Apc-Version: 2.0.1
+I0511 13:28:55.181931 80415 client_auth.go:357 ctx="apc" trace="2"] Server: nginx
+I0511 13:28:55.181934 80415 client_auth.go:357 ctx="apc" trace="2"] Vary: Accept-Encoding
+I0511 13:28:55.181937 80415 client_auth.go:357 ctx="apc" trace="2"] 
+I0511 13:28:55.181939 80415 client_auth.go:357 ctx="apc" trace="2"] 
+I0511 13:28:55.183857 80415 client_auth.go:357 ctx="apc" trace="2"] [{"uuid":"d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0","updated_by":"tim.statler@apcera.com","created_by":"tim.statler@apcera.com","updated_at":"2016-05-11T20:27:50.809932799Z","created_at":"2016-05-11T20:27:22.999227159Z","name":"jekyll-stager","fqn":"package::/sandbox/tim.statler::jekyll-stager","staging_pipeline_fqn":"stagpipe::/apcera::ruby","stager_job_fqns":["job::/apcera/stagers::ruby"],"resources":[{"uuid":"45ac2653-6973-4ffe-997d-38233bce5ed4","digest":"sha256:385cb3a7b9f505325f5564f4e95c93d6ee072d4131870d221d29cba1e3a4d6bb","length":7829667}],"resource":{"uuid":"45ac2653-6973-4ffe-997d-38233bce5ed4","digest":"sha256:385cb3a7b9f505325f5564f4e95c93d6ee072d4131870d221d29cba1e3a4d6bb","length":7829667},"dependencies":[{"type":"runtime","name":"ruby"},{"type":"package","name":"build-essential"}],"environment":{"RUBYOPT":"-r$HOME/app/_set_stdout_sync.rb","START_PATH":"/app"},"state":"ready","tags":{"linked-job":"eecfa3f3-ca16-430c-9382-c667e771aee3"},"version_id":7}]
+I0511 13:28:55.184171 80415 request.go:160 ctx="apc" trace="3"] -- Sending HTTP Request:
+I0511 13:28:55.184202 80415 client_auth.go:357 ctx="apc" trace="3"] GET /v1/jobs?package_id=d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0 HTTP/1.1
+I0511 13:28:55.184206 80415 client_auth.go:357 ctx="apc" trace="3"] Host: api.kiso.io
+I0511 13:28:55.184208 80415 client_auth.go:357 ctx="apc" trace="3"] User-Agent: APC/v2.0.1 (Continuum Client)
+I0511 13:28:55.184210 80415 client_auth.go:357 ctx="apc" trace="3"] Authorization: Bearer eyJ0eXAiOiIiLCJhbGciOiIifQ.eyJpc3MiOiJhdXRoX3NlcnZlckBhcGNlcmEubWUiLCJhdWQiOiJhcGNlcmEubWUiLCJpYXQiOjE0NjI5OTA5MTUsImV4cCI6MTQ2MzA3NzMyNSwicHJuIjoidGltLnN0YXRsZXJAYXBjZXJhLmNvbSIsImNsYWltcyI6W3siSXNzdWVyIjoiYXV0aF9zZXJ2ZXJAYXBjZXJhLm1lIiwiVHlwZSI6ImF1dGhUeXBlIiwiVmFsdWUiOiJnb29nbGVVc2VySW5mbyJ9XX0.MEYCIQCPKOUqjtYkQguPeh_xylfMYlDBIPQRutPlxh_x9uaPFgIhAJTF_G5XQ8EiqETO4uSVChjFYmlraAlfDQdQpGeAfHL9
+I0511 13:28:55.184243 80415 client_auth.go:357 ctx="apc" trace="3"] Hostname: Tims-MacBook-Pro.local-Client-Hostname
+I0511 13:28:55.184246 80415 client_auth.go:357 ctx="apc" trace="3"] Accept-Encoding: gzip
+I0511 13:28:55.184250 80415 client_auth.go:357 ctx="apc" trace="3"] 
+I0511 13:28:55.184253 80415 client_auth.go:357 ctx="apc" trace="3"] 
+I0511 13:28:55.238342 80415 request.go:184 ctx="apc" trace="4"] -- Received HTTP Response:
+I0511 13:28:55.238364 80415 client_auth.go:357 ctx="apc" trace="4"] HTTP/1.1 200 OK
+I0511 13:28:55.238370 80415 client_auth.go:357 ctx="apc" trace="4"] Transfer-Encoding: chunked
+I0511 13:28:55.238373 80415 client_auth.go:357 ctx="apc" trace="4"] Connection: keep-alive
+I0511 13:28:55.238376 80415 client_auth.go:357 ctx="apc" trace="4"] Content-Type: application/json
+I0511 13:28:55.238378 80415 client_auth.go:357 ctx="apc" trace="4"] Date: Wed, 11 May 2016 20:28:55 GMT
+I0511 13:28:55.238381 80415 client_auth.go:357 ctx="apc" trace="4"] Minimum-Apc-Version: 2.0.1
+I0511 13:28:55.238383 80415 client_auth.go:357 ctx="apc" trace="4"] Server: nginx
+I0511 13:28:55.238386 80415 client_auth.go:357 ctx="apc" trace="4"] Vary: Accept-Encoding
+I0511 13:28:55.238389 80415 client_auth.go:357 ctx="apc" trace="4"] 
+I0511 13:28:55.238391 80415 client_auth.go:357 ctx="apc" trace="4"] 
+I0511 13:28:55.240050 80415 client_auth.go:357 ctx="apc" trace="4"] [{"uuid":"eecfa3f3-ca16-430c-9382-c667e771aee3","updated_by":"tim.statler@apcera.com","created_by":"tim.statler@apcera.com","updated_at":"2016-05-11T20:27:50.569953729Z","created_at":"2016-05-11T20:27:50.386063656Z","bindings":{"binding::/sandbox/tim.statler::egress_for_jekyll-stager92d97e32":{"uuid":"46296c76-4cca-4cd3-8843-9dfbd63b0481","name":"egress_for_jekyll-stager92d97e32","fqn":"binding::/sandbox/tim.statler::egress_for_jekyll-stager92d97e32","job_fqn":"job::/sandbox/tim.statler::jekyll-stager","env_var":["EGRESS_FOR_JEKYLLSTAGER92D97E32_URI","NETWORK_URI"],"parameters":{"ipnet":"any","portrange":"all","protocol":"all"},"service_fqn":"service::/apcera::outside"}},"logs":[{"file":"/logs/stdout.*.log","channel":"job.$JOB_UUID.stdout"},{"file":"/logs/stderr.*.log","channel":"job.$JOB_UUID.stderr"}],"name":"jekyll-stager","fqn":"job::/sandbox/tim.statler::jekyll-stager","num_instances":1,"packages":[{"uuid":"d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0","state":"unknown","source":"user"},{"uuid":"8d5074e0-22dd-4eee-90f9-5327dfefa9dd","state":"ready","source":"system"},{"uuid":"30e0b506-2015-401f-9ae7-eed350d63265","state":"ready","source":"system"},{"uuid":"702ff4cf-d5e7-43ae-8192-38ead58f325f","state":"ready","source":"system"},{"uuid":"d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0","state":"ready","source":"system"}],"processes":{"stager":{"start_command_raw":[],"start_command":"./stager.rb","start_command_timeout":0,"stop_command_raw":[],"stop_command":"","stop_timeout":0}},"resources":{"cpu":0,"memory":268435456,"disk":1073741824,"network":5000000,"netmax":0},"rollout":{"force_stop_old_instances_after":120,"flapping_minimum_restarts":3,"flapping_percent":0.5,"flapping_window":300,"errored_state_window":0},"restart":{"restart_mode":"always"},"state":"ready","tags":{"stager":"jekyll-stager"},"version_id":2,"network_ref":null,"aggregate_network_routes":null}]
+I0511 13:28:55.240364 80415 request.go:160 ctx="apc" trace="5"] -- Sending HTTP Request:
+I0511 13:28:55.240388 80415 client_auth.go:357 ctx="apc" trace="5"] GET /v1/stagingpipelines?fqn=stagpipe%3A%3A%2Fapcera%3A%3Aruby HTTP/1.1
+I0511 13:28:55.240397 80415 client_auth.go:357 ctx="apc" trace="5"] Host: api.kiso.io
+I0511 13:28:55.240402 80415 client_auth.go:357 ctx="apc" trace="5"] User-Agent: APC/v2.0.1 (Continuum Client)
+I0511 13:28:55.240407 80415 client_auth.go:357 ctx="apc" trace="5"] Authorization: Bearer eyJ0eXAiOiIiLCJhbGciOiIifQ.eyJpc3MiOiJhdXRoX3NlcnZlckBhcGNlcmEubWUiLCJhdWQiOiJhcGNlcmEubWUiLCJpYXQiOjE0NjI5OTA5MTUsImV4cCI6MTQ2MzA3NzMyNSwicHJuIjoidGltLnN0YXRsZXJAYXBjZXJhLmNvbSIsImNsYWltcyI6W3siSXNzdWVyIjoiYXV0aF9zZXJ2ZXJAYXBjZXJhLm1lIiwiVHlwZSI6ImF1dGhUeXBlIiwiVmFsdWUiOiJnb29nbGVVc2VySW5mbyJ9XX0.MEYCIQCPKOUqjtYkQguPeh_xylfMYlDBIPQRutPlxh_x9uaPFgIhAJTF_G5XQ8EiqETO4uSVChjFYmlraAlfDQdQpGeAfHL9
+I0511 13:28:55.240413 80415 client_auth.go:357 ctx="apc" trace="5"] Hostname: Tims-MacBook-Pro.local-Client-Hostname
+I0511 13:28:55.240417 80415 client_auth.go:357 ctx="apc" trace="5"] Accept-Encoding: gzip
+I0511 13:28:55.240419 80415 client_auth.go:357 ctx="apc" trace="5"] 
+I0511 13:28:55.240422 80415 client_auth.go:357 ctx="apc" trace="5"] 
+I0511 13:28:55.286111 80415 request.go:184 ctx="apc" trace="6"] -- Received HTTP Response:
+I0511 13:28:55.286135 80415 client_auth.go:357 ctx="apc" trace="6"] HTTP/1.1 200 OK
+I0511 13:28:55.286142 80415 client_auth.go:357 ctx="apc" trace="6"] Transfer-Encoding: chunked
+I0511 13:28:55.286193 80415 client_auth.go:357 ctx="apc" trace="6"] Connection: keep-alive
+I0511 13:28:55.286198 80415 client_auth.go:357 ctx="apc" trace="6"] Content-Type: application/json
+I0511 13:28:55.286201 80415 client_auth.go:357 ctx="apc" trace="6"] Date: Wed, 11 May 2016 20:28:55 GMT
+I0511 13:28:55.286205 80415 client_auth.go:357 ctx="apc" trace="6"] Minimum-Apc-Version: 2.0.1
+I0511 13:28:55.286208 80415 client_auth.go:357 ctx="apc" trace="6"] Server: nginx
+I0511 13:28:55.286212 80415 client_auth.go:357 ctx="apc" trace="6"] Vary: Accept-Encoding
+I0511 13:28:55.286215 80415 client_auth.go:357 ctx="apc" trace="6"] 
+I0511 13:28:55.286219 80415 client_auth.go:357 ctx="apc" trace="6"] 
+I0511 13:28:55.287534 80415 client_auth.go:357 ctx="apc" trace="6"] [{"uuid":"20647ff9-ee34-4414-9646-26584e9cbd31","updated_by":"","created_by":"stagehand@apcera.me","updated_at":"2015-09-23T05:48:37.139231467Z","created_at":"2015-09-23T05:48:37.139231467Z","name":"ruby","fqn":"stagpipe::/apcera::ruby","stagers":[{"uuid":"07e2c92c-f998-4cd6-87cb-186f3b36cd00"}],"auto_id":0,"version_id":1}]
+I0511 13:28:55.288388 80415 request.go:160 ctx="apc" trace="7"] -- Sending HTTP Request:
+I0511 13:28:55.288410 80415 client_auth.go:357 ctx="apc" trace="7"] PUT /v1/packages/d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0 HTTP/1.1
+I0511 13:28:55.288415 80415 client_auth.go:357 ctx="apc" trace="7"] Host: api.kiso.io
+I0511 13:28:55.288418 80415 client_auth.go:357 ctx="apc" trace="7"] User-Agent: APC/v2.0.1 (Continuum Client)
+I0511 13:28:55.288421 80415 client_auth.go:357 ctx="apc" trace="7"] Transfer-Encoding: chunked
+I0511 13:28:55.288423 80415 client_auth.go:357 ctx="apc" trace="7"] Authorization: Bearer eyJ0eXAiOiIiLCJhbGciOiIifQ.eyJpc3MiOiJhdXRoX3NlcnZlckBhcGNlcmEubWUiLCJhdWQiOiJhcGNlcmEubWUiLCJpYXQiOjE0NjI5OTA5MTUsImV4cCI6MTQ2MzA3NzMyNSwicHJuIjoidGltLnN0YXRsZXJAYXBjZXJhLmNvbSIsImNsYWltcyI6W3siSXNzdWVyIjoiYXV0aF9zZXJ2ZXJAYXBjZXJhLm1lIiwiVHlwZSI6ImF1dGhUeXBlIiwiVmFsdWUiOiJnb29nbGVVc2VySW5mbyJ9XX0.MEYCIQCPKOUqjtYkQguPeh_xylfMYlDBIPQRutPlxh_x9uaPFgIhAJTF_G5XQ8EiqETO4uSVChjFYmlraAlfDQdQpGeAfHL9
+I0511 13:28:55.288427 80415 client_auth.go:357 ctx="apc" trace="7"] Content-Type: application/json
+I0511 13:28:55.288431 80415 client_auth.go:357 ctx="apc" trace="7"] Hostname: Tims-MacBook-Pro.local-Client-Hostname
+I0511 13:28:55.288433 80415 client_auth.go:357 ctx="apc" trace="7"] Accept-Encoding: gzip
+I0511 13:28:55.288436 80415 client_auth.go:357 ctx="apc" trace="7"] 
+I0511 13:28:55.288439 80415 client_auth.go:357 ctx="apc" trace="7"] 1
+I0511 13:28:55.288441 80415 client_auth.go:357 ctx="apc" trace="7"] {
+I0511 13:28:55.288444 80415 client_auth.go:357 ctx="apc" trace="7"] 3d6
+I0511 13:28:55.288447 80415 client_auth.go:357 ctx="apc" trace="7"] "uuid":"d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0","updated_by":"tim.statler@apcera.com","created_by":"tim.statler@apcera.com","updated_at":"2016-05-11T20:27:50.809932799Z","created_at":"2016-05-11T20:27:22.999227159Z","name":"jekyll-stager","fqn":"package::/sandbox/tim.statler::jekyll-stager/oldpkg","staging_pipeline_fqn":"stagpipe::/apcera::ruby","stager_job_fqns":["job::/apcera/stagers::ruby"],"resources":[{"uuid":"45ac2653-6973-4ffe-997d-38233bce5ed4","digest":"sha256:385cb3a7b9f505325f5564f4e95c93d6ee072d4131870d221d29cba1e3a4d6bb","length":7829667}],"resource":{"uuid":"45ac2653-6973-4ffe-997d-38233bce5ed4","digest":"sha256:385cb3a7b9f505325f5564f4e95c93d6ee072d4131870d221d29cba1e3a4d6bb","length":7829667},"dependencies":[{"type":"runtime","name":"ruby"},{"type":"package","name":"build-essential"}],"environment":{"RUBYOPT":"-r$HOME/app/_set_stdout_sync.rb","START_PATH":"/app"},"state":"ready","tags":{"linked-job":"eecfa3f3-ca16-430c-9382-c667e771aee3"},"version_id":7}
+I0511 13:28:55.288451 80415 client_auth.go:357 ctx="apc" trace="7"] 0
+I0511 13:28:55.288455 80415 client_auth.go:357 ctx="apc" trace="7"] 
+I0511 13:28:55.288457 80415 client_auth.go:357 ctx="apc" trace="7"] 
+I0511 13:28:55.348676 80415 request.go:184 ctx="apc" trace="8"] -- Received HTTP Response:
+I0511 13:28:55.348705 80415 client_auth.go:357 ctx="apc" trace="8"] HTTP/1.1 500 Internal Server Error
+I0511 13:28:55.348711 80415 client_auth.go:357 ctx="apc" trace="8"] Content-Length: 333
+I0511 13:28:55.348715 80415 client_auth.go:357 ctx="apc" trace="8"] Connection: keep-alive
+I0511 13:28:55.348718 80415 client_auth.go:357 ctx="apc" trace="8"] Content-Type: application/json
+I0511 13:28:55.348720 80415 client_auth.go:357 ctx="apc" trace="8"] Date: Wed, 11 May 2016 20:28:55 GMT
+I0511 13:28:55.348723 80415 client_auth.go:357 ctx="apc" trace="8"] Minimum-Apc-Version: 2.0.1
+I0511 13:28:55.348726 80415 client_auth.go:357 ctx="apc" trace="8"] Server: nginx
+I0511 13:28:55.348729 80415 client_auth.go:357 ctx="apc" trace="8"] 
+I0511 13:28:55.348732 80415 client_auth.go:357 ctx="apc" trace="8"] 
+I0511 13:28:55.350486 80415 client_auth.go:357 ctx="apc" trace="8"] {"message":"Internal server error","request_id":"46babe72-e0b7-f819-a852-1355c9155d47","missing_claims":null,"fatal":true,"retry":false,"client_side":false,"resource_missing":false,"duplicate_key":false,"request_invalid":false,"token_invalid":false,"requires_restart":false,"client_incompatible":false,"code":500,"policy_error":null}
+I0511 13:28:55.350537 80415 client_auth.go:357 ctx="apc" trace="8"] {"message":"Internal server error","request_id":"46babe72-e0b7-f819-a852-1355c9155d47","missing_claims":null,"fatal":true,"retry":false,"client_side":false,"resource_missing":false,"duplicate_key":false,"request_invalid":false,"token_invalid":false,"requires_restart":false,"client_incompatible":false,"code":500,"policy_error":null}
+I0511 13:30:49.950476 80447 apc.go:180 ctx="apc"] apc invoked from directory /Users/timstatler/dev/stager_labs/jekyll-test
+I0511 13:30:49.951302 80447 apc.go:332 ctx="apc"] invoking command: package replace 
+I0511 13:30:51.306869 80447 request.go:160 ctx="apc" trace="1"] -- Sending HTTP Request:
+I0511 13:30:51.306884 80447 client_auth.go:357 ctx="apc" trace="1"] GET /v1/packages?fqn=package%3A%3A%2Fsandbox%2Ftim.statler%3A%3Ajekyll-stager HTTP/1.1
+I0511 13:30:51.306899 80447 client_auth.go:357 ctx="apc" trace="1"] Host: api.kiso.io
+I0511 13:30:51.306901 80447 client_auth.go:357 ctx="apc" trace="1"] User-Agent: APC/v2.0.1 (Continuum Client)
+I0511 13:30:51.306907 80447 client_auth.go:357 ctx="apc" trace="1"] Authorization: Bearer eyJ0eXAiOiIiLCJhbGciOiIifQ.eyJpc3MiOiJhdXRoX3NlcnZlckBhcGNlcmEubWUiLCJhdWQiOiJhcGNlcmEubWUiLCJpYXQiOjE0NjI5OTA5MTUsImV4cCI6MTQ2MzA3NzMyNSwicHJuIjoidGltLnN0YXRsZXJAYXBjZXJhLmNvbSIsImNsYWltcyI6W3siSXNzdWVyIjoiYXV0aF9zZXJ2ZXJAYXBjZXJhLm1lIiwiVHlwZSI6ImF1dGhUeXBlIiwiVmFsdWUiOiJnb29nbGVVc2VySW5mbyJ9XX0.MEYCIQCPKOUqjtYkQguPeh_xylfMYlDBIPQRutPlxh_x9uaPFgIhAJTF_G5XQ8EiqETO4uSVChjFYmlraAlfDQdQpGeAfHL9
+I0511 13:30:51.306910 80447 client_auth.go:357 ctx="apc" trace="1"] Hostname: Tims-MacBook-Pro.local-Client-Hostname
+I0511 13:30:51.306913 80447 client_auth.go:357 ctx="apc" trace="1"] Accept-Encoding: gzip
+I0511 13:30:51.306915 80447 client_auth.go:357 ctx="apc" trace="1"] 
+I0511 13:30:51.306916 80447 client_auth.go:357 ctx="apc" trace="1"] 
+I0511 13:30:51.538700 80447 request.go:184 ctx="apc" trace="2"] -- Received HTTP Response:
+I0511 13:30:51.538723 80447 client_auth.go:357 ctx="apc" trace="2"] HTTP/1.1 200 OK
+I0511 13:30:51.538730 80447 client_auth.go:357 ctx="apc" trace="2"] Transfer-Encoding: chunked
+I0511 13:30:51.538734 80447 client_auth.go:357 ctx="apc" trace="2"] Connection: keep-alive
+I0511 13:30:51.538738 80447 client_auth.go:357 ctx="apc" trace="2"] Content-Type: application/json
+I0511 13:30:51.538741 80447 client_auth.go:357 ctx="apc" trace="2"] Date: Wed, 11 May 2016 20:30:51 GMT
+I0511 13:30:51.538744 80447 client_auth.go:357 ctx="apc" trace="2"] Minimum-Apc-Version: 2.0.1
+I0511 13:30:51.538778 80447 client_auth.go:357 ctx="apc" trace="2"] Server: nginx
+I0511 13:30:51.538782 80447 client_auth.go:357 ctx="apc" trace="2"] Vary: Accept-Encoding
+I0511 13:30:51.538786 80447 client_auth.go:357 ctx="apc" trace="2"] 
+I0511 13:30:51.538790 80447 client_auth.go:357 ctx="apc" trace="2"] 
+I0511 13:30:51.540415 80447 client_auth.go:357 ctx="apc" trace="2"] [{"uuid":"d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0","updated_by":"tim.statler@apcera.com","created_by":"tim.statler@apcera.com","updated_at":"2016-05-11T20:27:50.809932799Z","created_at":"2016-05-11T20:27:22.999227159Z","name":"jekyll-stager","fqn":"package::/sandbox/tim.statler::jekyll-stager","staging_pipeline_fqn":"stagpipe::/apcera::ruby","stager_job_fqns":["job::/apcera/stagers::ruby"],"resources":[{"uuid":"45ac2653-6973-4ffe-997d-38233bce5ed4","digest":"sha256:385cb3a7b9f505325f5564f4e95c93d6ee072d4131870d221d29cba1e3a4d6bb","length":7829667}],"resource":{"uuid":"45ac2653-6973-4ffe-997d-38233bce5ed4","digest":"sha256:385cb3a7b9f505325f5564f4e95c93d6ee072d4131870d221d29cba1e3a4d6bb","length":7829667},"dependencies":[{"type":"runtime","name":"ruby"},{"type":"package","name":"build-essential"}],"environment":{"RUBYOPT":"-r$HOME/app/_set_stdout_sync.rb","START_PATH":"/app"},"state":"ready","tags":{"linked-job":"eecfa3f3-ca16-430c-9382-c667e771aee3"},"version_id":7}]
+I0511 13:30:51.540779 80447 request.go:160 ctx="apc" trace="3"] -- Sending HTTP Request:
+I0511 13:30:51.540800 80447 client_auth.go:357 ctx="apc" trace="3"] GET /v1/jobs?package_id=d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0 HTTP/1.1
+I0511 13:30:51.540808 80447 client_auth.go:357 ctx="apc" trace="3"] Host: api.kiso.io
+I0511 13:30:51.540813 80447 client_auth.go:357 ctx="apc" trace="3"] User-Agent: APC/v2.0.1 (Continuum Client)
+I0511 13:30:51.540819 80447 client_auth.go:357 ctx="apc" trace="3"] Authorization: Bearer eyJ0eXAiOiIiLCJhbGciOiIifQ.eyJpc3MiOiJhdXRoX3NlcnZlckBhcGNlcmEubWUiLCJhdWQiOiJhcGNlcmEubWUiLCJpYXQiOjE0NjI5OTA5MTUsImV4cCI6MTQ2MzA3NzMyNSwicHJuIjoidGltLnN0YXRsZXJAYXBjZXJhLmNvbSIsImNsYWltcyI6W3siSXNzdWVyIjoiYXV0aF9zZXJ2ZXJAYXBjZXJhLm1lIiwiVHlwZSI6ImF1dGhUeXBlIiwiVmFsdWUiOiJnb29nbGVVc2VySW5mbyJ9XX0.MEYCIQCPKOUqjtYkQguPeh_xylfMYlDBIPQRutPlxh_x9uaPFgIhAJTF_G5XQ8EiqETO4uSVChjFYmlraAlfDQdQpGeAfHL9
+I0511 13:30:51.540936 80447 client_auth.go:357 ctx="apc" trace="3"] Hostname: Tims-MacBook-Pro.local-Client-Hostname
+I0511 13:30:51.540974 80447 client_auth.go:357 ctx="apc" trace="3"] Accept-Encoding: gzip
+I0511 13:30:51.540985 80447 client_auth.go:357 ctx="apc" trace="3"] 
+I0511 13:30:51.540989 80447 client_auth.go:357 ctx="apc" trace="3"] 
+I0511 13:30:51.615529 80447 request.go:184 ctx="apc" trace="4"] -- Received HTTP Response:
+I0511 13:30:51.615556 80447 client_auth.go:357 ctx="apc" trace="4"] HTTP/1.1 200 OK
+I0511 13:30:51.615563 80447 client_auth.go:357 ctx="apc" trace="4"] Transfer-Encoding: chunked
+I0511 13:30:51.615567 80447 client_auth.go:357 ctx="apc" trace="4"] Connection: keep-alive
+I0511 13:30:51.615570 80447 client_auth.go:357 ctx="apc" trace="4"] Content-Type: application/json
+I0511 13:30:51.615574 80447 client_auth.go:357 ctx="apc" trace="4"] Date: Wed, 11 May 2016 20:30:51 GMT
+I0511 13:30:51.615577 80447 client_auth.go:357 ctx="apc" trace="4"] Minimum-Apc-Version: 2.0.1
+I0511 13:30:51.615581 80447 client_auth.go:357 ctx="apc" trace="4"] Server: nginx
+I0511 13:30:51.615584 80447 client_auth.go:357 ctx="apc" trace="4"] Vary: Accept-Encoding
+I0511 13:30:51.615588 80447 client_auth.go:357 ctx="apc" trace="4"] 
+I0511 13:30:51.615591 80447 client_auth.go:357 ctx="apc" trace="4"] 
+I0511 13:30:51.617373 80447 client_auth.go:357 ctx="apc" trace="4"] [{"uuid":"eecfa3f3-ca16-430c-9382-c667e771aee3","updated_by":"tim.statler@apcera.com","created_by":"tim.statler@apcera.com","updated_at":"2016-05-11T20:27:50.569953729Z","created_at":"2016-05-11T20:27:50.386063656Z","bindings":{"binding::/sandbox/tim.statler::egress_for_jekyll-stager92d97e32":{"uuid":"46296c76-4cca-4cd3-8843-9dfbd63b0481","name":"egress_for_jekyll-stager92d97e32","fqn":"binding::/sandbox/tim.statler::egress_for_jekyll-stager92d97e32","job_fqn":"job::/sandbox/tim.statler::jekyll-stager","env_var":["EGRESS_FOR_JEKYLLSTAGER92D97E32_URI","NETWORK_URI"],"parameters":{"ipnet":"any","portrange":"all","protocol":"all"},"service_fqn":"service::/apcera::outside"}},"logs":[{"file":"/logs/stdout.*.log","channel":"job.$JOB_UUID.stdout"},{"file":"/logs/stderr.*.log","channel":"job.$JOB_UUID.stderr"}],"name":"jekyll-stager","fqn":"job::/sandbox/tim.statler::jekyll-stager","num_instances":1,"packages":[{"uuid":"d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0","state":"unknown","source":"user"},{"uuid":"8d5074e0-22dd-4eee-90f9-5327dfefa9dd","state":"ready","source":"system"},{"uuid":"30e0b506-2015-401f-9ae7-eed350d63265","state":"ready","source":"system"},{"uuid":"702ff4cf-d5e7-43ae-8192-38ead58f325f","state":"ready","source":"system"},{"uuid":"d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0","state":"ready","source":"system"}],"processes":{"stager":{"start_command_raw":[],"start_command":"./stager.rb","start_command_timeout":0,"stop_command_raw":[],"stop_command":"","stop_timeout":0}},"resources":{"cpu":0,"memory":268435456,"disk":1073741824,"network":5000000,"netmax":0},"rollout":{"force_stop_old_instances_after":120,"flapping_minimum_restarts":3,"flapping_percent":0.5,"flapping_window":300,"errored_state_window":0},"restart":{"restart_mode":"always"},"state":"ready","tags":{"stager":"jekyll-stager"},"version_id":2,"network_ref":null,"aggregate_network_routes":null}]
+I0511 13:30:51.617719 80447 request.go:160 ctx="apc" trace="5"] -- Sending HTTP Request:
+I0511 13:30:51.617744 80447 client_auth.go:357 ctx="apc" trace="5"] GET /v1/stagingpipelines?fqn=stagpipe%3A%3A%2Fapcera%3A%3Aruby HTTP/1.1
+I0511 13:30:51.617753 80447 client_auth.go:357 ctx="apc" trace="5"] Host: api.kiso.io
+I0511 13:30:51.617759 80447 client_auth.go:357 ctx="apc" trace="5"] User-Agent: APC/v2.0.1 (Continuum Client)
+I0511 13:30:51.617764 80447 client_auth.go:357 ctx="apc" trace="5"] Authorization: Bearer eyJ0eXAiOiIiLCJhbGciOiIifQ.eyJpc3MiOiJhdXRoX3NlcnZlckBhcGNlcmEubWUiLCJhdWQiOiJhcGNlcmEubWUiLCJpYXQiOjE0NjI5OTA5MTUsImV4cCI6MTQ2MzA3NzMyNSwicHJuIjoidGltLnN0YXRsZXJAYXBjZXJhLmNvbSIsImNsYWltcyI6W3siSXNzdWVyIjoiYXV0aF9zZXJ2ZXJAYXBjZXJhLm1lIiwiVHlwZSI6ImF1dGhUeXBlIiwiVmFsdWUiOiJnb29nbGVVc2VySW5mbyJ9XX0.MEYCIQCPKOUqjtYkQguPeh_xylfMYlDBIPQRutPlxh_x9uaPFgIhAJTF_G5XQ8EiqETO4uSVChjFYmlraAlfDQdQpGeAfHL9
+I0511 13:30:51.617770 80447 client_auth.go:357 ctx="apc" trace="5"] Hostname: Tims-MacBook-Pro.local-Client-Hostname
+I0511 13:30:51.617776 80447 client_auth.go:357 ctx="apc" trace="5"] Accept-Encoding: gzip
+I0511 13:30:51.617781 80447 client_auth.go:357 ctx="apc" trace="5"] 
+I0511 13:30:51.617784 80447 client_auth.go:357 ctx="apc" trace="5"] 
+I0511 13:30:51.669658 80447 request.go:184 ctx="apc" trace="6"] -- Received HTTP Response:
+I0511 13:30:51.669682 80447 client_auth.go:357 ctx="apc" trace="6"] HTTP/1.1 200 OK
+I0511 13:30:51.669689 80447 client_auth.go:357 ctx="apc" trace="6"] Transfer-Encoding: chunked
+I0511 13:30:51.669734 80447 client_auth.go:357 ctx="apc" trace="6"] Connection: keep-alive
+I0511 13:30:51.669738 80447 client_auth.go:357 ctx="apc" trace="6"] Content-Type: application/json
+I0511 13:30:51.669742 80447 client_auth.go:357 ctx="apc" trace="6"] Date: Wed, 11 May 2016 20:30:51 GMT
+I0511 13:30:51.669746 80447 client_auth.go:357 ctx="apc" trace="6"] Minimum-Apc-Version: 2.0.1
+I0511 13:30:51.669749 80447 client_auth.go:357 ctx="apc" trace="6"] Server: nginx
+I0511 13:30:51.669753 80447 client_auth.go:357 ctx="apc" trace="6"] Vary: Accept-Encoding
+I0511 13:30:51.669756 80447 client_auth.go:357 ctx="apc" trace="6"] 
+I0511 13:30:51.669759 80447 client_auth.go:357 ctx="apc" trace="6"] 
+I0511 13:30:51.671024 80447 client_auth.go:357 ctx="apc" trace="6"] [{"uuid":"20647ff9-ee34-4414-9646-26584e9cbd31","updated_by":"","created_by":"stagehand@apcera.me","updated_at":"2015-09-23T05:48:37.139231467Z","created_at":"2015-09-23T05:48:37.139231467Z","name":"ruby","fqn":"stagpipe::/apcera::ruby","stagers":[{"uuid":"07e2c92c-f998-4cd6-87cb-186f3b36cd00"}],"auto_id":0,"version_id":1}]
+I0511 13:30:51.671735 80447 request.go:160 ctx="apc" trace="7"] -- Sending HTTP Request:
+I0511 13:30:51.671754 80447 client_auth.go:357 ctx="apc" trace="7"] PUT /v1/packages/d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0 HTTP/1.1
+I0511 13:30:51.671759 80447 client_auth.go:357 ctx="apc" trace="7"] Host: api.kiso.io
+I0511 13:30:51.671762 80447 client_auth.go:357 ctx="apc" trace="7"] User-Agent: APC/v2.0.1 (Continuum Client)
+I0511 13:30:51.671765 80447 client_auth.go:357 ctx="apc" trace="7"] Transfer-Encoding: chunked
+I0511 13:30:51.671767 80447 client_auth.go:357 ctx="apc" trace="7"] Authorization: Bearer eyJ0eXAiOiIiLCJhbGciOiIifQ.eyJpc3MiOiJhdXRoX3NlcnZlckBhcGNlcmEubWUiLCJhdWQiOiJhcGNlcmEubWUiLCJpYXQiOjE0NjI5OTA5MTUsImV4cCI6MTQ2MzA3NzMyNSwicHJuIjoidGltLnN0YXRsZXJAYXBjZXJhLmNvbSIsImNsYWltcyI6W3siSXNzdWVyIjoiYXV0aF9zZXJ2ZXJAYXBjZXJhLm1lIiwiVHlwZSI6ImF1dGhUeXBlIiwiVmFsdWUiOiJnb29nbGVVc2VySW5mbyJ9XX0.MEYCIQCPKOUqjtYkQguPeh_xylfMYlDBIPQRutPlxh_x9uaPFgIhAJTF_G5XQ8EiqETO4uSVChjFYmlraAlfDQdQpGeAfHL9
+I0511 13:30:51.671771 80447 client_auth.go:357 ctx="apc" trace="7"] Content-Type: application/json
+I0511 13:30:51.671775 80447 client_auth.go:357 ctx="apc" trace="7"] Hostname: Tims-MacBook-Pro.local-Client-Hostname
+I0511 13:30:51.671777 80447 client_auth.go:357 ctx="apc" trace="7"] Accept-Encoding: gzip
+I0511 13:30:51.671780 80447 client_auth.go:357 ctx="apc" trace="7"] 
+I0511 13:30:51.671783 80447 client_auth.go:357 ctx="apc" trace="7"] 1
+I0511 13:30:51.671785 80447 client_auth.go:357 ctx="apc" trace="7"] {
+I0511 13:30:51.671788 80447 client_auth.go:357 ctx="apc" trace="7"] 3d6
+I0511 13:30:51.671791 80447 client_auth.go:357 ctx="apc" trace="7"] "uuid":"d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0","updated_by":"tim.statler@apcera.com","created_by":"tim.statler@apcera.com","updated_at":"2016-05-11T20:27:50.809932799Z","created_at":"2016-05-11T20:27:22.999227159Z","name":"jekyll-stager","fqn":"package::/sandbox/tim.statler::jekyll-stager/oldpkg","staging_pipeline_fqn":"stagpipe::/apcera::ruby","stager_job_fqns":["job::/apcera/stagers::ruby"],"resources":[{"uuid":"45ac2653-6973-4ffe-997d-38233bce5ed4","digest":"sha256:385cb3a7b9f505325f5564f4e95c93d6ee072d4131870d221d29cba1e3a4d6bb","length":7829667}],"resource":{"uuid":"45ac2653-6973-4ffe-997d-38233bce5ed4","digest":"sha256:385cb3a7b9f505325f5564f4e95c93d6ee072d4131870d221d29cba1e3a4d6bb","length":7829667},"dependencies":[{"type":"runtime","name":"ruby"},{"type":"package","name":"build-essential"}],"environment":{"RUBYOPT":"-r$HOME/app/_set_stdout_sync.rb","START_PATH":"/app"},"state":"ready","tags":{"linked-job":"eecfa3f3-ca16-430c-9382-c667e771aee3"},"version_id":7}
+I0511 13:30:51.671795 80447 client_auth.go:357 ctx="apc" trace="7"] 0
+I0511 13:30:51.671798 80447 client_auth.go:357 ctx="apc" trace="7"] 
+I0511 13:30:51.671801 80447 client_auth.go:357 ctx="apc" trace="7"] 
+I0511 13:30:51.731046 80447 request.go:184 ctx="apc" trace="8"] -- Received HTTP Response:
+I0511 13:30:51.731072 80447 client_auth.go:357 ctx="apc" trace="8"] HTTP/1.1 500 Internal Server Error
+I0511 13:30:51.731080 80447 client_auth.go:357 ctx="apc" trace="8"] Content-Length: 333
+I0511 13:30:51.731084 80447 client_auth.go:357 ctx="apc" trace="8"] Connection: keep-alive
+I0511 13:30:51.731087 80447 client_auth.go:357 ctx="apc" trace="8"] Content-Type: application/json
+I0511 13:30:51.731091 80447 client_auth.go:357 ctx="apc" trace="8"] Date: Wed, 11 May 2016 20:30:51 GMT
+I0511 13:30:51.731094 80447 client_auth.go:357 ctx="apc" trace="8"] Minimum-Apc-Version: 2.0.1
+I0511 13:30:51.731098 80447 client_auth.go:357 ctx="apc" trace="8"] Server: nginx
+I0511 13:30:51.731101 80447 client_auth.go:357 ctx="apc" trace="8"] 
+I0511 13:30:51.731105 80447 client_auth.go:357 ctx="apc" trace="8"] 
+I0511 13:30:51.732339 80447 client_auth.go:357 ctx="apc" trace="8"] {"message":"Internal server error","request_id":"a677ce60-5421-593c-28c7-89ae84be48ab","missing_claims":null,"fatal":true,"retry":false,"client_side":false,"resource_missing":false,"duplicate_key":false,"request_invalid":false,"token_invalid":false,"requires_restart":false,"client_incompatible":false,"code":500,"policy_error":null}
+I0511 13:30:51.732359 80447 client_auth.go:357 ctx="apc" trace="8"] {"message":"Internal server error","request_id":"a677ce60-5421-593c-28c7-89ae84be48ab","missing_claims":null,"fatal":true,"retry":false,"client_side":false,"resource_missing":false,"duplicate_key":false,"request_invalid":false,"token_invalid":false,"requires_restart":false,"client_incompatible":false,"code":500,"policy_error":null}
+I0511 13:43:08.105583 80629 apc.go:180 ctx="apc"] apc invoked from directory /Users/timstatler/dev/stager_labs/jekyll-test
+I0511 13:43:08.106349 80629 apc.go:332 ctx="apc"] invoking command: package replace 
+I0511 13:43:08.602619 80629 request.go:160 ctx="apc" trace="1"] -- Sending HTTP Request:
+I0511 13:43:08.602649 80629 client_auth.go:357 ctx="apc" trace="1"] GET /v1/packages?fqn=package%3A%3A%2Fsandbox%2Ftim.statler%3A%3Ajekyll-stager HTTP/1.1
+I0511 13:43:08.602668 80629 client_auth.go:357 ctx="apc" trace="1"] Host: api.kiso.io
+I0511 13:43:08.602672 80629 client_auth.go:357 ctx="apc" trace="1"] User-Agent: APC/v2.0.1 (Continuum Client)
+I0511 13:43:08.602722 80629 client_auth.go:357 ctx="apc" trace="1"] Authorization: Bearer eyJ0eXAiOiIiLCJhbGciOiIifQ.eyJpc3MiOiJhdXRoX3NlcnZlckBhcGNlcmEubWUiLCJhdWQiOiJhcGNlcmEubWUiLCJpYXQiOjE0NjI5OTA5MTUsImV4cCI6MTQ2MzA3NzMyNSwicHJuIjoidGltLnN0YXRsZXJAYXBjZXJhLmNvbSIsImNsYWltcyI6W3siSXNzdWVyIjoiYXV0aF9zZXJ2ZXJAYXBjZXJhLm1lIiwiVHlwZSI6ImF1dGhUeXBlIiwiVmFsdWUiOiJnb29nbGVVc2VySW5mbyJ9XX0.MEYCIQCPKOUqjtYkQguPeh_xylfMYlDBIPQRutPlxh_x9uaPFgIhAJTF_G5XQ8EiqETO4uSVChjFYmlraAlfDQdQpGeAfHL9
+I0511 13:43:08.602728 80629 client_auth.go:357 ctx="apc" trace="1"] Hostname: Tims-MacBook-Pro.local-Client-Hostname
+I0511 13:43:08.602732 80629 client_auth.go:357 ctx="apc" trace="1"] Accept-Encoding: gzip
+I0511 13:43:08.602735 80629 client_auth.go:357 ctx="apc" trace="1"] 
+I0511 13:43:08.602738 80629 client_auth.go:357 ctx="apc" trace="1"] 
+I0511 13:43:09.409877 80629 request.go:184 ctx="apc" trace="2"] -- Received HTTP Response:
+I0511 13:43:09.409898 80629 client_auth.go:357 ctx="apc" trace="2"] HTTP/1.1 200 OK
+I0511 13:43:09.409905 80629 client_auth.go:357 ctx="apc" trace="2"] Transfer-Encoding: chunked
+I0511 13:43:09.409909 80629 client_auth.go:357 ctx="apc" trace="2"] Connection: keep-alive
+I0511 13:43:09.409912 80629 client_auth.go:357 ctx="apc" trace="2"] Content-Type: application/json
+I0511 13:43:09.409915 80629 client_auth.go:357 ctx="apc" trace="2"] Date: Wed, 11 May 2016 20:43:09 GMT
+I0511 13:43:09.409919 80629 client_auth.go:357 ctx="apc" trace="2"] Minimum-Apc-Version: 2.0.1
+I0511 13:43:09.409959 80629 client_auth.go:357 ctx="apc" trace="2"] Server: nginx
+I0511 13:43:09.409963 80629 client_auth.go:357 ctx="apc" trace="2"] Vary: Accept-Encoding
+I0511 13:43:09.409966 80629 client_auth.go:357 ctx="apc" trace="2"] 
+I0511 13:43:09.409970 80629 client_auth.go:357 ctx="apc" trace="2"] 
+I0511 13:43:09.411774 80629 client_auth.go:357 ctx="apc" trace="2"] [{"uuid":"d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0","updated_by":"tim.statler@apcera.com","created_by":"tim.statler@apcera.com","updated_at":"2016-05-11T20:27:50.809932799Z","created_at":"2016-05-11T20:27:22.999227159Z","name":"jekyll-stager","fqn":"package::/sandbox/tim.statler::jekyll-stager","staging_pipeline_fqn":"stagpipe::/apcera::ruby","stager_job_fqns":["job::/apcera/stagers::ruby"],"resources":[{"uuid":"45ac2653-6973-4ffe-997d-38233bce5ed4","digest":"sha256:385cb3a7b9f505325f5564f4e95c93d6ee072d4131870d221d29cba1e3a4d6bb","length":7829667}],"resource":{"uuid":"45ac2653-6973-4ffe-997d-38233bce5ed4","digest":"sha256:385cb3a7b9f505325f5564f4e95c93d6ee072d4131870d221d29cba1e3a4d6bb","length":7829667},"dependencies":[{"type":"runtime","name":"ruby"},{"type":"package","name":"build-essential"}],"environment":{"RUBYOPT":"-r$HOME/app/_set_stdout_sync.rb","START_PATH":"/app"},"state":"ready","tags":{"linked-job":"eecfa3f3-ca16-430c-9382-c667e771aee3"},"version_id":7}]
+I0511 13:43:09.412044 80629 request.go:160 ctx="apc" trace="3"] -- Sending HTTP Request:
+I0511 13:43:09.412062 80629 client_auth.go:357 ctx="apc" trace="3"] GET /v1/jobs?package_id=d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0 HTTP/1.1
+I0511 13:43:09.412069 80629 client_auth.go:357 ctx="apc" trace="3"] Host: api.kiso.io
+I0511 13:43:09.412072 80629 client_auth.go:357 ctx="apc" trace="3"] User-Agent: APC/v2.0.1 (Continuum Client)
+I0511 13:43:09.412075 80629 client_auth.go:357 ctx="apc" trace="3"] Authorization: Bearer eyJ0eXAiOiIiLCJhbGciOiIifQ.eyJpc3MiOiJhdXRoX3NlcnZlckBhcGNlcmEubWUiLCJhdWQiOiJhcGNlcmEubWUiLCJpYXQiOjE0NjI5OTA5MTUsImV4cCI6MTQ2MzA3NzMyNSwicHJuIjoidGltLnN0YXRsZXJAYXBjZXJhLmNvbSIsImNsYWltcyI6W3siSXNzdWVyIjoiYXV0aF9zZXJ2ZXJAYXBjZXJhLm1lIiwiVHlwZSI6ImF1dGhUeXBlIiwiVmFsdWUiOiJnb29nbGVVc2VySW5mbyJ9XX0.MEYCIQCPKOUqjtYkQguPeh_xylfMYlDBIPQRutPlxh_x9uaPFgIhAJTF_G5XQ8EiqETO4uSVChjFYmlraAlfDQdQpGeAfHL9
+I0511 13:43:09.412128 80629 client_auth.go:357 ctx="apc" trace="3"] Hostname: Tims-MacBook-Pro.local-Client-Hostname
+I0511 13:43:09.412133 80629 client_auth.go:357 ctx="apc" trace="3"] Accept-Encoding: gzip
+I0511 13:43:09.412135 80629 client_auth.go:357 ctx="apc" trace="3"] 
+I0511 13:43:09.412138 80629 client_auth.go:357 ctx="apc" trace="3"] 
+I0511 13:43:09.468708 80629 request.go:184 ctx="apc" trace="4"] -- Received HTTP Response:
+I0511 13:43:09.468735 80629 client_auth.go:357 ctx="apc" trace="4"] HTTP/1.1 200 OK
+I0511 13:43:09.468742 80629 client_auth.go:357 ctx="apc" trace="4"] Transfer-Encoding: chunked
+I0511 13:43:09.468747 80629 client_auth.go:357 ctx="apc" trace="4"] Connection: keep-alive
+I0511 13:43:09.468750 80629 client_auth.go:357 ctx="apc" trace="4"] Content-Type: application/json
+I0511 13:43:09.468753 80629 client_auth.go:357 ctx="apc" trace="4"] Date: Wed, 11 May 2016 20:43:09 GMT
+I0511 13:43:09.468757 80629 client_auth.go:357 ctx="apc" trace="4"] Minimum-Apc-Version: 2.0.1
+I0511 13:43:09.468761 80629 client_auth.go:357 ctx="apc" trace="4"] Server: nginx
+I0511 13:43:09.468764 80629 client_auth.go:357 ctx="apc" trace="4"] Vary: Accept-Encoding
+I0511 13:43:09.468767 80629 client_auth.go:357 ctx="apc" trace="4"] 
+I0511 13:43:09.468771 80629 client_auth.go:357 ctx="apc" trace="4"] 
+I0511 13:43:09.470476 80629 client_auth.go:357 ctx="apc" trace="4"] [{"uuid":"eecfa3f3-ca16-430c-9382-c667e771aee3","updated_by":"tim.statler@apcera.com","created_by":"tim.statler@apcera.com","updated_at":"2016-05-11T20:27:50.569953729Z","created_at":"2016-05-11T20:27:50.386063656Z","bindings":{"binding::/sandbox/tim.statler::egress_for_jekyll-stager92d97e32":{"uuid":"46296c76-4cca-4cd3-8843-9dfbd63b0481","name":"egress_for_jekyll-stager92d97e32","fqn":"binding::/sandbox/tim.statler::egress_for_jekyll-stager92d97e32","job_fqn":"job::/sandbox/tim.statler::jekyll-stager","env_var":["EGRESS_FOR_JEKYLLSTAGER92D97E32_URI","NETWORK_URI"],"parameters":{"ipnet":"any","portrange":"all","protocol":"all"},"service_fqn":"service::/apcera::outside"}},"logs":[{"file":"/logs/stdout.*.log","channel":"job.$JOB_UUID.stdout"},{"file":"/logs/stderr.*.log","channel":"job.$JOB_UUID.stderr"}],"name":"jekyll-stager","fqn":"job::/sandbox/tim.statler::jekyll-stager","num_instances":1,"packages":[{"uuid":"d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0","state":"unknown","source":"user"},{"uuid":"8d5074e0-22dd-4eee-90f9-5327dfefa9dd","state":"ready","source":"system"},{"uuid":"30e0b506-2015-401f-9ae7-eed350d63265","state":"ready","source":"system"},{"uuid":"702ff4cf-d5e7-43ae-8192-38ead58f325f","state":"ready","source":"system"},{"uuid":"d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0","state":"ready","source":"system"}],"processes":{"stager":{"start_command_raw":[],"start_command":"./stager.rb","start_command_timeout":0,"stop_command_raw":[],"stop_command":"","stop_timeout":0}},"resources":{"cpu":0,"memory":268435456,"disk":1073741824,"network":5000000,"netmax":0},"rollout":{"force_stop_old_instances_after":120,"flapping_minimum_restarts":3,"flapping_percent":0.5,"flapping_window":300,"errored_state_window":0},"restart":{"restart_mode":"always"},"state":"ready","tags":{"stager":"jekyll-stager"},"version_id":2,"network_ref":null,"aggregate_network_routes":null}]
+I0511 13:43:09.470782 80629 request.go:160 ctx="apc" trace="5"] -- Sending HTTP Request:
+I0511 13:43:09.470806 80629 client_auth.go:357 ctx="apc" trace="5"] GET /v1/stagingpipelines?fqn=stagpipe%3A%3A%2Fapcera%3A%3Aruby HTTP/1.1
+I0511 13:43:09.470815 80629 client_auth.go:357 ctx="apc" trace="5"] Host: api.kiso.io
+I0511 13:43:09.470820 80629 client_auth.go:357 ctx="apc" trace="5"] User-Agent: APC/v2.0.1 (Continuum Client)
+I0511 13:43:09.470845 80629 client_auth.go:357 ctx="apc" trace="5"] Authorization: Bearer eyJ0eXAiOiIiLCJhbGciOiIifQ.eyJpc3MiOiJhdXRoX3NlcnZlckBhcGNlcmEubWUiLCJhdWQiOiJhcGNlcmEubWUiLCJpYXQiOjE0NjI5OTA5MTUsImV4cCI6MTQ2MzA3NzMyNSwicHJuIjoidGltLnN0YXRsZXJAYXBjZXJhLmNvbSIsImNsYWltcyI6W3siSXNzdWVyIjoiYXV0aF9zZXJ2ZXJAYXBjZXJhLm1lIiwiVHlwZSI6ImF1dGhUeXBlIiwiVmFsdWUiOiJnb29nbGVVc2VySW5mbyJ9XX0.MEYCIQCPKOUqjtYkQguPeh_xylfMYlDBIPQRutPlxh_x9uaPFgIhAJTF_G5XQ8EiqETO4uSVChjFYmlraAlfDQdQpGeAfHL9
+I0511 13:43:09.470854 80629 client_auth.go:357 ctx="apc" trace="5"] Hostname: Tims-MacBook-Pro.local-Client-Hostname
+I0511 13:43:09.470859 80629 client_auth.go:357 ctx="apc" trace="5"] Accept-Encoding: gzip
+I0511 13:43:09.470862 80629 client_auth.go:357 ctx="apc" trace="5"] 
+I0511 13:43:09.470865 80629 client_auth.go:357 ctx="apc" trace="5"] 
+I0511 13:43:09.511957 80629 request.go:184 ctx="apc" trace="6"] -- Received HTTP Response:
+I0511 13:43:09.511972 80629 client_auth.go:357 ctx="apc" trace="6"] HTTP/1.1 200 OK
+I0511 13:43:09.511976 80629 client_auth.go:357 ctx="apc" trace="6"] Transfer-Encoding: chunked
+I0511 13:43:09.511999 80629 client_auth.go:357 ctx="apc" trace="6"] Connection: keep-alive
+I0511 13:43:09.512001 80629 client_auth.go:357 ctx="apc" trace="6"] Content-Type: application/json
+I0511 13:43:09.512002 80629 client_auth.go:357 ctx="apc" trace="6"] Date: Wed, 11 May 2016 20:43:09 GMT
+I0511 13:43:09.512004 80629 client_auth.go:357 ctx="apc" trace="6"] Minimum-Apc-Version: 2.0.1
+I0511 13:43:09.512005 80629 client_auth.go:357 ctx="apc" trace="6"] Server: nginx
+I0511 13:43:09.512007 80629 client_auth.go:357 ctx="apc" trace="6"] Vary: Accept-Encoding
+I0511 13:43:09.512008 80629 client_auth.go:357 ctx="apc" trace="6"] 
+I0511 13:43:09.512010 80629 client_auth.go:357 ctx="apc" trace="6"] 
+I0511 13:43:09.512760 80629 client_auth.go:357 ctx="apc" trace="6"] [{"uuid":"20647ff9-ee34-4414-9646-26584e9cbd31","updated_by":"","created_by":"stagehand@apcera.me","updated_at":"2015-09-23T05:48:37.139231467Z","created_at":"2015-09-23T05:48:37.139231467Z","name":"ruby","fqn":"stagpipe::/apcera::ruby","stagers":[{"uuid":"07e2c92c-f998-4cd6-87cb-186f3b36cd00"}],"auto_id":0,"version_id":1}]
+I0511 13:43:09.513193 80629 request.go:160 ctx="apc" trace="7"] -- Sending HTTP Request:
+I0511 13:43:09.513204 80629 client_auth.go:357 ctx="apc" trace="7"] PUT /v1/packages/d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0 HTTP/1.1
+I0511 13:43:09.513207 80629 client_auth.go:357 ctx="apc" trace="7"] Host: api.kiso.io
+I0511 13:43:09.513209 80629 client_auth.go:357 ctx="apc" trace="7"] User-Agent: APC/v2.0.1 (Continuum Client)
+I0511 13:43:09.513210 80629 client_auth.go:357 ctx="apc" trace="7"] Transfer-Encoding: chunked
+I0511 13:43:09.513212 80629 client_auth.go:357 ctx="apc" trace="7"] Authorization: Bearer eyJ0eXAiOiIiLCJhbGciOiIifQ.eyJpc3MiOiJhdXRoX3NlcnZlckBhcGNlcmEubWUiLCJhdWQiOiJhcGNlcmEubWUiLCJpYXQiOjE0NjI5OTA5MTUsImV4cCI6MTQ2MzA3NzMyNSwicHJuIjoidGltLnN0YXRsZXJAYXBjZXJhLmNvbSIsImNsYWltcyI6W3siSXNzdWVyIjoiYXV0aF9zZXJ2ZXJAYXBjZXJhLm1lIiwiVHlwZSI6ImF1dGhUeXBlIiwiVmFsdWUiOiJnb29nbGVVc2VySW5mbyJ9XX0.MEYCIQCPKOUqjtYkQguPeh_xylfMYlDBIPQRutPlxh_x9uaPFgIhAJTF_G5XQ8EiqETO4uSVChjFYmlraAlfDQdQpGeAfHL9
+I0511 13:43:09.513214 80629 client_auth.go:357 ctx="apc" trace="7"] Content-Type: application/json
+I0511 13:43:09.513216 80629 client_auth.go:357 ctx="apc" trace="7"] Hostname: Tims-MacBook-Pro.local-Client-Hostname
+I0511 13:43:09.513218 80629 client_auth.go:357 ctx="apc" trace="7"] Accept-Encoding: gzip
+I0511 13:43:09.513219 80629 client_auth.go:357 ctx="apc" trace="7"] 
+I0511 13:43:09.513221 80629 client_auth.go:357 ctx="apc" trace="7"] 1
+I0511 13:43:09.513222 80629 client_auth.go:357 ctx="apc" trace="7"] {
+I0511 13:43:09.513224 80629 client_auth.go:357 ctx="apc" trace="7"] 3d6
+I0511 13:43:09.513226 80629 client_auth.go:357 ctx="apc" trace="7"] "uuid":"d7cf1ce9-c137-4df0-83fd-15d9b3f6ccb0","updated_by":"tim.statler@apcera.com","created_by":"tim.statler@apcera.com","updated_at":"2016-05-11T20:27:50.809932799Z","created_at":"2016-05-11T20:27:22.999227159Z","name":"jekyll-stager","fqn":"package::/sandbox/tim.statler::jekyll-stager/oldpkg","staging_pipeline_fqn":"stagpipe::/apcera::ruby","stager_job_fqns":["job::/apcera/stagers::ruby"],"resources":[{"uuid":"45ac2653-6973-4ffe-997d-38233bce5ed4","digest":"sha256:385cb3a7b9f505325f5564f4e95c93d6ee072d4131870d221d29cba1e3a4d6bb","length":7829667}],"resource":{"uuid":"45ac2653-6973-4ffe-997d-38233bce5ed4","digest":"sha256:385cb3a7b9f505325f5564f4e95c93d6ee072d4131870d221d29cba1e3a4d6bb","length":7829667},"dependencies":[{"type":"runtime","name":"ruby"},{"type":"package","name":"build-essential"}],"environment":{"RUBYOPT":"-r$HOME/app/_set_stdout_sync.rb","START_PATH":"/app"},"state":"ready","tags":{"linked-job":"eecfa3f3-ca16-430c-9382-c667e771aee3"},"version_id":7}
+I0511 13:43:09.513229 80629 client_auth.go:357 ctx="apc" trace="7"] 0
+I0511 13:43:09.513231 80629 client_auth.go:357 ctx="apc" trace="7"] 
+I0511 13:43:09.513232 80629 client_auth.go:357 ctx="apc" trace="7"] 
+I0511 13:43:09.569222 80629 request.go:184 ctx="apc" trace="8"] -- Received HTTP Response:
+I0511 13:43:09.569247 80629 client_auth.go:357 ctx="apc" trace="8"] HTTP/1.1 500 Internal Server Error
+I0511 13:43:09.569256 80629 client_auth.go:357 ctx="apc" trace="8"] Content-Length: 333
+I0511 13:43:09.569262 80629 client_auth.go:357 ctx="apc" trace="8"] Connection: keep-alive
+I0511 13:43:09.569266 80629 client_auth.go:357 ctx="apc" trace="8"] Content-Type: application/json
+I0511 13:43:09.569269 80629 client_auth.go:357 ctx="apc" trace="8"] Date: Wed, 11 May 2016 20:43:09 GMT
+I0511 13:43:09.569273 80629 client_auth.go:357 ctx="apc" trace="8"] Minimum-Apc-Version: 2.0.1
+I0511 13:43:09.569276 80629 client_auth.go:357 ctx="apc" trace="8"] Server: nginx
+I0511 13:43:09.569280 80629 client_auth.go:357 ctx="apc" trace="8"] 
+I0511 13:43:09.569283 80629 client_auth.go:357 ctx="apc" trace="8"] 
+I0511 13:43:09.570478 80629 client_auth.go:357 ctx="apc" trace="8"] {"message":"Internal server error","request_id":"1e52f6d0-bd6c-6ae8-1ca1-ec83e7420d05","missing_claims":null,"fatal":true,"retry":false,"client_side":false,"resource_missing":false,"duplicate_key":false,"request_invalid":false,"token_invalid":false,"requires_restart":false,"client_incompatible":false,"code":500,"policy_error":null}
+I0511 13:43:09.570505 80629 client_auth.go:357 ctx="apc" trace="8"] {"message":"Internal server error","request_id":"1e52f6d0-bd6c-6ae8-1ca1-ec83e7420d05","missing_claims":null,"fatal":true,"retry":false,"client_side":false,"resource_missing":false,"duplicate_key":false,"request_invalid":false,"token_invalid":false,"requires_restart":false,"client_incompatible":false,"code":500,"policy_error":null}
