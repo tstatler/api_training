@@ -11,6 +11,8 @@ class MyApp < Sinatra::Base
 
     jobs_api_instance = SwaggerClient::JobsApi.new
 
+    set :bind, '0.0.0.0'
+
     get '/jobs' do
       begin
         @results = jobs_api_instance.jobs_get()
