@@ -4,7 +4,6 @@ require 'swagger_client'
 SwaggerClient.configure do |config|
   config.api_key['authorization'] = ENV["TOKEN"]
   config.api_key_prefix['authorization'] = 'Bearer'
-  config.debugging = true
 end
 
 # Create an API instance
